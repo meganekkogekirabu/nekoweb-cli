@@ -1,0 +1,21 @@
+[package]
+name = "nekoweb-cli"
+version = "0.1.0"
+edition = "2024"
+description = "CLI for Nekoweb"
+
+[[bin]]
+name = "neko"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0.100"
+chrono = { version = "0.4.42", features = ["alloc"] }
+clap = { version = "4.5.54", features = ["derive"] }
+confy = "2.0.0"
+nekoweb-rs = "0.1.4"
+open = "5.3.3"
+serde = "1.0.228"
+tokio = { version = "1.49.0", features = ["full"] }
+walkdir = "2.5.0"
+zip = "7.0.0"
